@@ -44,9 +44,9 @@ export default function Profile() {
     !(typeof prof === "string" || prof instanceof String)
   ) {
     return (
-      <Contact />
-      // <Suspense fallback={renderLoader()}>
-      //   <GithubProfileCard prof={prof} key={prof.id} />
+      // <Contact />
+      <Suspense fallback={renderLoader()}>
+        <GithubProfileCard prof={prof} key={prof.id} />
       // </Suspense>
     );
   } else {

@@ -634,7 +634,7 @@ const podcastSection = {
 };
 
 const contactInfo = {
-  title: emoji("Contact Me ☎️"),
+  title: emoji("Contact Me ☎"),
   subtitle:
     "Discuss a project or just want to say hi? My Inbox is open for all.",
   number: "+88-01515-212687",
@@ -645,7 +645,7 @@ const contactInfo = {
 
 const twitterDetails = {
   userName: "aalhabib001", //Replace "twitter" with your twitter username without @
-  display: false // Set true to display this section, defaults to false
+  display: true // Set true to display this section, defaults to false
 };
 
 export {

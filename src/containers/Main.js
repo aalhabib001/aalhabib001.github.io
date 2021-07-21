@@ -60,7 +60,7 @@ export default class Main extends Component {
           <Talks />
           <Twitter />
           <Podcast />
-          <Contact/>
+          {/*<Contact/>*/}
           <Profile />
           <Footer />
           <Top />
