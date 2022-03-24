@@ -127,7 +127,7 @@ const educationInfo = {
       schoolName: "Daffodil International University",
       logo: require("./assets/images/diulogo.png"),
       subHeader: "B.Sc in Software Engineering with Major in Cyber Security",
-      duration: "September 2018 - August 2022",
+      // duration: "September 2018 - August 2022",
       desc: " ",
       descBullets: [
         "ACM Programming Contest Trainer, DIU SWE Programming Community - Permanent Campus."
@@ -137,7 +137,7 @@ const educationInfo = {
       schoolName: "Milestone Collage",
       logo: require("./assets/images/milestone.jpg"),
       subHeader: "Science",
-      duration: "July 2016 - May 2018",
+      // duration: "July 2016 - May 2018",
       desc: " ",
       descBullets: [
 
@@ -170,36 +170,20 @@ const techStack = {
 // Work experience section
 
 const workExperiences = {
-  display: false, //Set it to true to show workExperiences Section
+  display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Software Engineer",
-      company: "Facebook",
-      companylogo: require("./assets/images/facebookLogo.png"),
-      date: "June 2018 – Present",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      descBullets: [
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      ]
+      role: "Junior Programmer",
+      company: "IBCS-Primax Software Bangladesh Ltd",
+      companylogo: require("./assets/images/ibcs-logo.png"),
+      date: "February 2022 – Present",
+      // desc:
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
     },
-    {
-      role: "Front-End Developer",
-      company: "Quora",
-      companylogo: require("./assets/images/quoraLogo.png"),
-      date: "May 2017 – May 2018",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    },
-    {
-      role: "Software Engineer Intern",
-      company: "Airbnb",
-      companylogo: require("./assets/images/airbnbLogo.png"),
-      date: "Jan 2015 – Sep 2015",
-      desc:
-        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-    }
   ]
 };
 
