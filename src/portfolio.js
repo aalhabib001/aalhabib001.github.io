@@ -173,10 +173,22 @@ const workExperiences = {
   display: true, //Set it to true to show workExperiences Section
   experience: [
     {
-      role: "Junior Programmer",
+      role: "Programmer",
       company: "IBCS-Primax Software Bangladesh Ltd",
       companylogo: require("./assets/images/ibcs-logo.png"),
-      date: "February 2022 – Present",
+      date: "February 2022 – August 2022",
+      // desc:
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+      // descBullets: [
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
+      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
+      // ]
+    },
+    {
+      role: "Software Engineer",
+      company: "Impel IT Solutions Ltd",
+      companylogo: require("./assets/images/impel-logo.png"),
+      date: "September 2022 – Present",
       // desc:
       //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
       // descBullets: [
