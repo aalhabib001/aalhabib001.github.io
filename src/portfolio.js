@@ -177,24 +177,30 @@ const workExperiences = {
       company: "IBCS-Primax Software Bangladesh Ltd",
       companylogo: require("./assets/images/ibcs-logo.png"),
       date: "February 2022 – August 2022",
-      // desc:
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
+      desc:
+        "Worked as a Full Stack Developer for government-focused enterprise applications. Contributed to key modules under the Ministry of Public Administration and Ministry of Planning, ensuring scalable, secure, and maintainable codebases.",
+      descBullets: [
+        "Developed and maintained modules like Census, O&M, Law, Internal File Transfer, Gari Sheba, and GPF under the Ministry of Public Administration.",
+        "Contributed to the Research Management System for the Ministry of Planning.",
+        "Followed agile development processes and participated in requirement analysis and system design.",
+        "Worked with Spring Boot (Java), Angular, Oracle DB, PostgreSQL, and Docker for full-stack development.",
+        "Focused on delivering modular, reusable code and adhering to government security standards."
+      ]
     },
     {
       role: "Software Engineer",
       company: "Impel IT Solutions Ltd",
       companylogo: require("./assets/images/impel-logo.png"),
       date: "September 2022 – Present",
-      // desc:
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-      // descBullets: [
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit",
-      //   "Lorem ipsum dolor sit amet, consectetur adipiscing elit"
-      // ]
+      desc:
+        "Currently working as a Full Stack Developer, delivering advanced web applications for financial and internal business systems. Involved in building dynamic, data-driven modules using modern technologies.",
+      descBullets: [
+        "Working on enterprise-grade solutions for Risk Management, Valuation, Taxation, Rebuilding Cost, and internal ERP systems.",
+        "Building dynamic interfaces and backend services using Angular and Spring Boot.",
+        "Integrated 3D visualization tools using Three.js for enhanced UI/UX in valuation modules.",
+        "Using MySQL, Docker, and GitLab CI/CD for robust development and deployment pipelines.",
+        "Collaborating closely with cross-functional teams for system architecture, development, and testing."
+      ]
     },
   ]
 };
