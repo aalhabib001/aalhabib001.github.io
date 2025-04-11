@@ -1,35 +1,41 @@
 name: Build and Deploy
-
+env:
+  CI: false
+  GITHUB_USERNAME: ${{ github.repository_owner }}
+  REACT_APP_GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # This is automatically set by Github Actions
+  USE_GITHUB_DATA: "true"
+  MEDIUM_USERNAME: "aalhabib001" # Change this to your medium username
 on:
+  workflow_dispatch:
   push:
     branches:
       - master
-
+  schedule:
+    - cron: "0 12 * * 1" # see https://docs.github.com/en/actions/reference/events-that-trigger-workflows#scheduled-events
 jobs:
-  build:
+  build-and-deploy:
     runs-on: ubuntu-latest
-
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v3
-
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
+      - name: Checkout 🛎️
+        uses: actions/checkout@v3 # If you're using actions/checkout@v3 you must set persist-credentials to false in most cases for the deployment to work correctly.
         with:
-          node-version: 18
+          persist-credentials: false
 
-      - name: Install dependencies
-        run: npm install --legacy-peer-deps --force
+      - name: Setup Node.js 🔧
+        uses: actions/setup-node@v3.8.1
+        with:
+          node-version: 18.x
 
-      - name: Build project
-        run: npm run build
+      - name: Update npm 🚀
+        run: npm install -g npm@latest
 
-      - name: Deploy to GitHub Pages
-        env:
-          GIT_USER: github-actions[bot]
-          GIT_EMAIL: github-actions[bot]@users.noreply.github.com
-          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Install and Build 🔧 # Build the Project
         run: |
-          git config --global user.name "$GIT_USER"
-          git config --global user.email "$GIT_EMAIL"
-          npm run deploy
+          npm install
+          npm run build
+      - name: Deploy 🚀
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          GITHUB_TOKEN : ${{ secrets.GITHUB_TOKEN }} # This is provided by GitHub.
+          BRANCH: gh-pages # The branch the action should deploy to.
+          FOLDER: build # The folder the action should deploy.
