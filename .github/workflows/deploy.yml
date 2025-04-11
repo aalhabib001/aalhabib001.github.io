@@ -29,7 +29,6 @@ jobs:
       - name: Install and Build 🔧
         run: |
           npm install --legacy-peer-deps --force
-          npm audit fix  # Try fixing vulnerabilities
           npm run build
 
       - name: Deploy 🚀
